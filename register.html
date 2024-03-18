@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <title>REGISTRAION FORM</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div class="regform">
+<form>
+    <div class="inputsdata">
+        <label for="par_name">Name:</label>
+        <input class="form-control" type="text">
+    </div>
+    <div class="inputsdata">
+        <label for="par_college">Your College Name:</label>
+        <input class="form-control" type="text">
+    </div>
+    <div class="inputsdata">
+        <label for="par_city">City:</label>
+        <input class="form-control" type="text">
+    </div>
+    <div class="inputsdata">
+        <label for="par_email">Your Email:</label>
+        <input class="form-control" type="text">
+    </div>
+    <div class="inputsdata">
+        <label for="par_phno">Your Phone No:</label>
+        <input class="form-control" type="number" name="par_phno" id="par_phno" minlength="10" maxlength="10" required>
+    </div>
+    <div class="inputsdata">
+        <label for="par_department">Your Department:</label>
+        <input class="form-control" type="text">
+    </div>
+    <div class="inputsdata">
+        <label for="par_gender">Select Your Gender:</label>
+        <select class="form-control" name="par_gender" id="par_gender" required>
+            <option value>Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <div class="inputsdata">
+        <label for="par_year">Select Your Year:</label>
+        <select class="form-control" name="par_year" id="par_year" required>
+            <option value>Select</option>
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+            <option value="3rd Year">3rd Year</option>
+            <option value="4th Year">4th Year</option>
+        </select>
+  </div>
+  
+    <div class="noofevent">
+        <label>Select No. of Events</label>
+        <div>
+          <li>
+            <input onclick="eventCountSelect()" type="radio" name="noofevent" value="1" id="noofeventcount1">
+            <label id="noofeventcount1content">1 Events</label>
+          </li>
+          <li>
+            <input onclick="eventCountSelect()" type="radio" name="noofevent" value="2" id="noofeventcount2">
+            <label id="noofeventcount2content">2 Events</label> 
+          </li>
+        </div>
+        
+    </div>
+      <div class="text-center">
+        <center>
+        <a href="register.html" class="button">
+          <p>Sumbit</p>
+        </a>
+      </center>
+      </div>
+    
+ </div>
+ 
+ <center>
+    <a href="index.html">Home</a>
+ </center>
+ 
+</form>
+</body>
+</html>
